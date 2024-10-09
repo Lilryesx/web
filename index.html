@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en-US"></html>
+<html lang="en-US">
+
+</html>
 
 <head>
     <meta charset="utf-8">
@@ -18,162 +20,124 @@
 
     <!-- Import Scripting (defer makes the js load after html loads)-->
     <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
-     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js" ></script>
-     <script src="./HomePage/js/main.js" defer></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="./HomePage/js/main.js" defer></script>
     <script src="./HomePage/js/menu.js" defer></script>
     <script src="./HomePage/js/vue.js" defer></script>
-    
 
-    
-   
-
-
-    <!-- Import other things -->
 </head>
 
-
 <body>
+    <div id="snap-scroller">
+        <header>
 
-    <!-- <nav class="header-box">
-        <div class="header-title">
-            <h1 class="header-title" id="top-title">Lane Management System</h1>
-        </div>
+            <div id="headerflex">
 
-        <div class="header-right">
-            <a id="" href="./Prototype/proto.html"> Prototype </a>
-            <a id="" href="./protected/groupinfo.html"> Locked-Items </a>
-            <a id="menu"> Menu </a>
-            <div id="popup-menu"></div>
+                <nav id="splash-header-flex" class="hidden">
+                    <div id="splash-header-items">
+                        <div id="splash-header-links">
+                            <a id="" href="./Prototype/proto.html"> Prototype </a>
+                            <a id="" href="./protected/groupinfo.html"> Locked-Items </a>
+                            <a id="menu"> Menu </a>
+                            <div id="popup-menu"></div>
+                        </div>
+                        <hr id="splash-header-line">
+                    </div>
+                </nav>
 
-        </div>
-    </nav> -->
-    <div id = "snap-scroller">
+                <div id="side-bar">
+                    <div id="side-bar-title">
+                        <h2>Meet The Team</h2>
+                    </div>
+
+                    <div id="side-bar-flex">
+                        <div id="member-flesh"> </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </header>
 
         <div id="snap-section">
-           
-                <div id="splash-page" class="splash-1"> 
-                     <!-- <div class="hidden">  -->
-                    <nav id="splash-header-flex" class = "hidden"> 
-                        <div id="splash-header-items">
-                            <div id="splash-header-links">
-                                <a id="" href="./Prototype/proto.html"> Prototype </a> <!-- Prototype PAGE WITH Scenarios-->
-                                <a id="" href="./protected/groupinfo.html"> Locked-Items </a>
-                                <a> Menu </a>
-                            </div>
-                            <hr id="splash-header-line">
-                        </div>
+            <div id="splash-page" class="splash-1">
+
+                <div id="splash-header-flex" class="hidden">
+
+                </div>
+                <div class="hidden">
+                    <nav id="splash-header-flex" class="hidden">
                     </nav>
+                </div>
 
-                    <div id="splash-body" class = "hidden">
 
-                        <!-- <div id="container">
-                            <P> Hover here</P>
-                            <p> the corners move haha</p>
-                        </div> -->
-
-                        <div id="splash-body-information">
-                            <h1 id="splash-body-title">Lane Management System</h1>
-                            <p id="splash-body-text">A CSE 435 Project</p>
-                        </div>
-
-                        <div id="splash-body-image">
-                            image will go here
-                        </div>
-
+                <div id="splash-body" class="hidden">
+                    <div id="splash-body-information">
+                        <h1 id="splash-body-title">Lane Management System</h1>
+                        <p id="splash-body-text">A CSE 435 Project</p>
                     </div>
 
-                    <div id="splash-footer" class = "hidden">
-                        <div id="splash-footer-element">
-                            <h1 id="splash-footer-text">Scroll to get Started</h1>
-                            <p id="splash-footer-icon">...elem here</p>
-
-                        </div>
+                    <div id="splash-body-image">
+                        image will go here
                     </div>
 
                 </div>
-            <!-- </div> -->
-                
-            
+
+                <div id="splash-footer" class="hidden">
+                    <div id="splash-footer-element">
+                        <h1 id="splash-footer-text">Scroll to get Started</h1>
+                        <p id="splash-footer-icon">...elem here</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
 
         <div id="snap-section">
-            <nav class="header-box">
-                <div class="header-title">
-                    <h1 class="header-title" id="top-title">Lane Management System</h1>
-                </div>
-        
-                <div class="header-right">
-                    <a id="" href="./Prototype/proto.html"> Prototype </a> <!-- Prototype PAGE WITH Scenarios-->
-                    <a id="" href="./protected/groupinfo.html"> Locked-Items </a>
-                    <a id="menu"> Menu </a>
-                    <div id="popup-menu"></div>
-        
-                </div>
-            </nav>
-
-            <div id="base">
+            <div id="base" class="hidden">
+                
                 <div id="subheading">
-                    
-                        <h1 id="greeting"> Welcome to LMS3! </h1>
-                        <div id="side-bar">
-                            <div id="side-bar-title">
-                                <h2>Meet The Team</h2>
-                            </div>
-                
-                            <div id="side-bar-flex">
-                                <div id="member-flesh"> </div>
-                
-                            </div>
-                        </div>
-                    
-
                 </div>
-                
-                
-        
+
                 <div id="hero-top">
                     <div id="proj-img"></div>
-        
-                    <div id="hero-top-right"></div>
+
+                    <div id="hero-top-right"> </div>
                 </div>
                 <div id="hero-bottom">
-        
+
                     <div id="bottom-bg">
-        
+
                         <div class="bottom-text">
                             <h2> Project Background </h2>
-                            <p> The auto industry is looking for ways to advance the auto industry 
+                            <p> The auto industry is looking for ways to advance the auto industry
                                 specifically by targetting driver convienience and safety.
                                 Lane managemenment systems do exactly that.
                                 These systems ensure the safety of the road overall by ensuring
                                 that drivers are within the bounds of the lane whenever possible.
                             </p>
                         </div>
-        
+
                         <div class="bottom-text">
                             <h2> Project Description</h2>
-                            <p> We are creating a Lane Management System (LMS) that incorporates 
+                            <p> We are creating a Lane Management System (LMS) that incorporates
                                 <em> 3 industry standard subsystems:</em>
-                                <p>
-                                    Lane Departure Warning System (LDWS), Lane Centering System (LCS), and Lane Keeping System (LKS).
-                                </p>
+                            <p>
+                                Lane Departure Warning System (LDWS), Lane Centering System (LCS), and Lane Keeping
+                                System (LKS).
+                            </p>
                             </p>
                         </div>
-        
                     </div>
                 </div>
-        
             </div>
-
         </div>
-
-
     </div>
-
-    
-
-   
-
 </body>
 
 </html>
