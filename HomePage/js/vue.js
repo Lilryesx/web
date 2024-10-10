@@ -85,7 +85,7 @@ Vue.createApp({
         return {
             members: [
                 {name: 'Baldwin-Williams, Ryon', data: ['Artifacts Manager', 'baldw266', 'https://www.linkedin.com/in/baldwin-williams/','./HomePage/images/ryon_image.JPG'] },
-                { name: 'Vandyke, Sawyer', data: ['Project Manager', 'vandy118', 'https://www.linkedin.com/in/sawyer-vandyke-7326532b4/','../HomePage/images/Sawyer_image.png'] },
+                { name: 'Vandyke, Sawyer', data: ['Project Manager', 'vandy118', 'https://www.linkedin.com/in/sawyer-vandyke-7326532b4/','./HomePage/images/Sawyer_image.png'] },
                 { name: 'Grycza, Ben', data: ['Domain Expert', 'gryczabe', 'https://www.linkedin.com/in/ben-grycza-00bb22297/','./HomePage/images/Grycza_Ben_image.png'] },
                 { name: 'Williams, Troy', data: ['Security insurance', 'will3645', 'https://www.linkedin.com/in/troy-williams-a90327318/','./HomePage/images/Troy_image.jpg'] },
                 { name: 'Bossio, Grant', data: ['Project Facilitator', 'bossiogr', 'https://www.linkedin.com/in/grant-bossio-705598324/','./HomePage/images/grant-image.png'] }

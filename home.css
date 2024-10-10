@@ -590,7 +590,10 @@ html{
     #base{
         padding-top: 100px;
     }
-    
+    #splash-body{
+        flex-direction: column;
+    }
+
 }
 
 #container{
@@ -619,10 +622,8 @@ html{
 
 #splash-header-flex{
     display: flex;
-    padding: 10px;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 10px;
     align-self: stretch;
 }
 
@@ -630,8 +631,6 @@ html{
     display: flex;
     padding: 10px;
     align-items: flex-start;
-    /* gap: 5px; */
-    /* background-color: #20c29c; */
     flex-direction: column;
     
     
@@ -639,14 +638,15 @@ html{
 
 #splash-header-links{
     display: flex;
-    padding: 10px;
-    gap: 10px;
+    padding: 10px 0 0 10px;
+    gap: 15px;
     /* background-color: #20c29c; */
     font-family: "JetBrains Mono";
     /* font-style: oblique; */
     /* font-style: bold; */
     font-weight: 700;
     /* line-height: normal; */
+    align-items: center;
 }
 
 #splash-header-line{
@@ -681,32 +681,32 @@ html{
 
 #splash-footer{
     display: flex;
-    padding: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     align-self: stretch;
 }
 
 #splash-footer-text{
     display: flex;
-    padding: 5px 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
     font-size: 1.3rem;
+    text-shadow: 3px 3px 3px #787272;
+    
 }
 
 #splash-footer-icon{
+    width: 40px;
+}
+
+#splash-footer-element{
     display: flex;
-    padding: 5px 10px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 5px;
-    font-size: 1.3rem;
+    justify-content: center;
+    animation: bounce 1s ease infinite alternate;
 }
 
 #splash-body-title{
@@ -718,8 +718,8 @@ html{
 
 
 img{
-    width: 100%;
-    max-width: 100%;
+    /* width: 100%; */
+    /* max-width: 100%; */
 }
 
 header{
@@ -734,8 +734,33 @@ header{
 #headerflex{
     display: flex;
     justify-content: space-between;
+   
+
 }
 
 #splash-header-spacer{
     min-height: 100px;
+}
+
+.image{
+    width: 30px;
+    /* position: absolute; */
+
+}
+
+
+#header-image{
+    display: flex;
+    align-items: center;
+    /* background-color: #74ACF0; */
+    gap: 2px;
+}
+
+
+
+@keyframes bounce {
+    100% {
+        transform: translateY(-20px);
+    }
+    
 }
