@@ -60,7 +60,7 @@ Vue.createApp({
     <div v-for="member in members">
         <div id="member-flex">
             <div>
-                <img id="member-picture" :src= member.data[3] alt="Picture of member.name"
+                <img id="member-picture" :src= member.data[3] :alt = member.name
             </div>
 
             <div id="member-info">
@@ -76,7 +76,6 @@ Vue.createApp({
                         <img class="icon" src="./other/LinkedIn 2.svg">
                     </a>           
                 </div>
-
             </div> 
         </div>
     </div>

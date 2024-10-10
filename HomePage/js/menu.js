@@ -8,7 +8,7 @@ const menu = document.getElementById('menu');
 const popupMenu = document.getElementById('popup-menu');
 
 sidebarOpen = false;
-// closeSidebar();
+closeSidebar();
 
 function closeSidebar(event) {
 
