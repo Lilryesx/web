@@ -575,10 +575,20 @@ html{
         min-height: 30px;
     }
     #side-bar{
-        width: 90%;
+        position: relative;
+        margin: 0 0 0 30px;
+        /* min-width: 90%; */
+        width: 100%;
     }
     #member-flesh{
-        /* width: 60%; */
+        width: 90%;
+    }
+    #headerflex{
+        flex-direction: column;
+        width: 90%;
+    }
+    #base{
+        padding-top: 100px;
     }
     
 }
@@ -724,4 +734,8 @@ header{
 #headerflex{
     display: flex;
     justify-content: space-between;
+}
+
+#splash-header-spacer{
+    min-height: 100px;
 }
