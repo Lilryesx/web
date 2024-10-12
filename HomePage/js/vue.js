@@ -11,6 +11,7 @@ Vue.createApp({
                 <div id="proj-desc-components-flex-text"> 
                     <p>{{info.desc}}</p>
                 </div>
+                <div v-if="info.image" class="betty"><img class= "top-image" :src = info.image :alt=info.title  </div>
                 <div id="proj-desc-components-flex-links">
                     <div class="link">
                         <a class="link-text" :href="info.link" target="_blank">Website</a>
@@ -21,12 +22,11 @@ Vue.createApp({
     </div>
     
     `,
-
     data(){
         return {
             information: [
                 {title: 'CSE 435 - Software Engineering', link:"https://www.cse.msu.edu/~cse435/", desc: 'Software lifecycle including specification, design, coding, testing, and verification of a software product. Stepwise refinement and traceability. Software maintenance and documentation.'},
-                {title: 'Prof. Betty Cheng', link:"http://www.cse.msu.edu/~chengb/", desc: 'Professor Betty Cheng is a professor at Michigan State University in the Computer Science and Engineering Department. Yada yada yada....'}
+                {title: 'Prof. Betty Cheng', link:"http://www.cse.msu.edu/~chengb/", desc: 'Professor Betty Cheng is a professor at Michigan State University in the Computer Science and Engineering Department.', image: "./other/bettycheng.jpg.webp"}
             ]
         };
         
@@ -93,59 +93,3 @@ Vue.createApp({
         };
     }
 }).mount("#member-flesh");
-
-
-
-
-
-/* {<template>
-    <div 
-    ref="container"
-    :style="{
-        transform:`
-        rotateX(${roll * SCALE_CONSTANT}deg) 
-        rotateY(${tilt * SCALE_CONSTANT}deg)`
-    }"
-    > chee </div>
-</template> }*/
-
-/* <script setup>
-  import { ref } from 'vue'
-  import { useParallax } from '@vueuse/core'
-
-  const container = ref(null)
-  const { tilt, roll } = useParallax(container)
-  const SCALE_CONSTANT = -25;
-</script>
-*/
-
-
-
-
-// Vue.createApp({
-//     setup() {
-//         const container = ref(null);
-//         const { tilt, roll } = useParallax(container);
-//         const SCALE_CONSTANT = -25;
-
-//         return {
-//             container,
-//             tilt,
-//             roll,
-//             SCALE_CONSTANT
-//         };
-//     },
-    
-//     template: 
-//     `
-//     <div 
-//     ref="container"
-//     :style="{
-//         transform: \`
-//         rotateX(\${roll * SCALE_CONSTANT}deg) 
-//         rotateY(\${tilt * SCALE_CONSTANT}deg)\`
-//     }"
-//     > chee </div>
-//     `
-// }).mount("#container");
-
