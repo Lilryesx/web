@@ -45,9 +45,9 @@ Vue.createApp({
     data(){
         return {
             links: [
-                {title: 'Project Description(PDF)', url: "./other/2024-LMS-GM-Agrawal-v2.pdf"},
-                {title: 'SRS(PDF)', url:"./other/SRS-1.pdf"},
-                {title: 'Bibliography(PDF)', url: "./other/Bibliography.pdf"}
+                {title: 'Project Description(PDF)', url: "./other/documents/2024-LMS-GM-Agrawal-v2.pdf"},
+                {title: 'SRS(PDF)', url:"./other/documents/SRS-1.pdf"},
+                {title: 'Bibliography(PDF)', url: "./other/documents/Bibliography.pdf"}
             ]
         };
         

@@ -1,0 +1,112 @@
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 90%;
+}
+
+.header-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collapsible{
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.collapsible label{
+    position: relative;
+    font-weight: 600;
+    background: rgb(77, 77, 77);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18) 0 4px 15px 0 rgba(0,0,0,0.15);
+    color: rgb(156, 188, 251);
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+
+.collapsible-content{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 5px;
+    list-style: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 50%;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked ~ .collapsible-content{
+    min-height: 300px;
+    overflow-y: scroll;
+    padding-bottom: 25px;
+    background-color: rgb(214, 152, 107);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18) 0 4px 15px 0 rgba(0,0,0,0.15);
+    opacity: 100%;
+    top: 0;
+    padding: 15px;
+}
+.collapsible-content h2{
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+
+}
+.collapsible-content p{
+    margin-bottom: 10px;
+    padding: 0 15px 0 15px;
+}
+
+.collapsible input{
+    display: none;
+}
+
+.collapsible img.im{
+    position: absolute;
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    transform: rotate(-90deg);
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked + label img.im {
+    transform: rotate(0deg);
+}
+
+.meetings{
+    gap: 200px;
+}
+
+
+#QnA{
+    font-weight: 600;
+    background: rgb(77, 77, 77);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18) 0 4px 15px 0 rgba(0,0,0,0.15);
+    color: rgb(156, 188, 251);
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 5px;
+    width:fit-content;
+}
+
+.req{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}

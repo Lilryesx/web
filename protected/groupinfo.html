@@ -14,12 +14,12 @@
 
         <!-- Import styling -->
         <!-- <link rel="stylesheet" href="/HomePage/css/home.css"> -->
-        <link rel="stylesheet" href="../home.css">
+        <link rel="stylesheet" href="./protected-styling.css">
 
         <!-- Import Scripting (defer makes the js load after html loads)-->
-        <!-- <script src="../HomePage/js/menu.js" defer></script> -->
         <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js" ></script>
         <script src="../protected/groupinfo.js" defer></script>
+        <script src="../protected/mini-vue.js" defer></script>
 
 
         <!-- Import other things -->
@@ -31,14 +31,19 @@
     <div class="header-box">
         <div class="header-title">
             <h1 class="header-title">Secure Access</h1>
-
         </div>
 
         <div class="header-right">
-            
             <a id="" href="../index.html"> Back to safety </a> 
         </div>
     </div>
 
-    <div id="group-info"></div>
+    <h2>Meetings</h2>
+    <div id="meetings-collapse"> </div>
+
+    <h2>Requirements & Questions </h2>
+    <div class="req"> 
+        <a id="QnA" target="_blank"  href="../other/documents/SRS-1.pdf"> Requirements v1 </a> 
+        <a id="QnA" target="_blank"  href="../other/documents/Q&A-1.pdf"> Q&A </a> 
+    </div>
 </body>
