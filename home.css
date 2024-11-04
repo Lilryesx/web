@@ -82,6 +82,36 @@ header{
     gap: 10px;
     border-radius: 10px;
     background: rgba(14, 63, 94, 0.75);
+    /* z-index: 999999999; */
+}
+
+.link-icon{
+    display: none;
+    /* padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: rgba(14, 63, 94, 0.75); */
+    width: 2em;
+    height: 2em;
+}
+
+.link-icon:hover{
+    opacity: .4;
+}
+
+.link-text-icon{
+    display: none;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.link:hover{
+    opacity: .4;
 }
 
 .link-text{
@@ -206,6 +236,10 @@ header{
     display: none;
 }
 
+.menu-item:hover{
+    opacity: .4
+}
+
 #gallery{
     display: flex;
     justify-content: space-between;
@@ -229,7 +263,7 @@ header{
     margin-top: 10px;
     flex-shrink: 0;
     align-self: stretch;
-    z-index: -999;
+    /* z-index: -999; */
 }
 
 #hero-top-right{
@@ -254,9 +288,9 @@ header{
     border-radius: 16px;
     border: 5px solid rgba(14, 63, 94, 0.75);
     background: rgba(195, 232, 255, 0.51);
-    height: 600px;
+    /* height: 600px; */
+    height: fit-content;
     box-shadow: 0px 4px 16.1px 0px rgba(0, 0, 0, 0.356);
-    z-index: -999;
 }
 
 
@@ -694,4 +728,23 @@ header{
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .betty{
+        display: none;
+        background-color: #2B6CC6;
+        
+    }
+    
+  }
+
+  @media screen and (max-width: 500px) {
+    .link{
+        display:none
+    }
+    .link-icon{
+        display: flex;
+    }
   }

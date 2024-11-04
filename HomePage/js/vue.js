@@ -1,6 +1,3 @@
-
-
-
 Vue.createApp({
     template: 
     `
@@ -13,9 +10,10 @@ Vue.createApp({
                 </div>
                 <div v-if="info.image" class="betty"><img class= "top-image" :src = info.image :alt=info.title  </div>
                 <div id="proj-desc-components-flex-links">
-                    <div class="link">
-                        <a class="link-text" :href="info.link" target="_blank">Website</a>
-                    </div>
+                    
+                    <a class="link-text" :href="info.link" target="_blank"><div class="link">Website</div>  </a>
+                    <a :href="info.link" target="_blank"><div class="link-icon"><img src = "./HomePage/icons/openpage.png" alt = "link" ></div>  </a>             
+                    
                 </div>
             </div>
         </div>
