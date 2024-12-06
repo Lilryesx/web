@@ -27,7 +27,6 @@ Vue.createApp({
                 {title: 'Prof. Betty Cheng', link:"http://www.cse.msu.edu/~chengb/", desc: 'Professor Betty Cheng is a professor at Michigan State University in the Computer Science and Engineering Department.', image: "./other/bettycheng.jpg.webp"}
             ]
         };
-        
     }
 }).mount("#hero-top-right");
 
@@ -36,16 +35,18 @@ Vue.createApp({
     template: 
     `
     <div v-for="link in links">
-        <div class="menu-item"><a :href="link.url" target="_blank">{{link.title}}</a></div>
+        <div class="menu-item"><a :href="link.url">{{link.title}}</a></div>
     </div>
     `,
 
     data(){
         return {
             links: [
-                {title: 'Project Description(PDF)', url: "./other/documents/2024-LMS-GM-Agrawal-v2.pdf"},
-                {title: 'SRS(PDF)', url:"./other/documents/SRS-1.pdf"},
-                {title: 'Bibliography(PDF)', url: "./other/documents/Bibliography.pdf"}
+                {title: 'Project Description', url: "./other/documents/2024-LMS-GM-Agrawal-v2.pdf"},
+                {title: 'SRS', url:"./other/documents/SRS-2.pdf"},
+                {title: 'Domain Research', url: "./other/intermediate/req1.docx"},
+                {title: 'Bibliography', url: "./other/documents/Bibliography.pdf"},
+                {title: 'Presentation', url: "./other/documents/Presention.pdf"}
             ]
         };
         
@@ -70,7 +71,7 @@ Vue.createApp({
             <div id="member-links">
 
                 <div id="proj-desc-components-flex-links">
-                    <a class= "iconlink" :href="member.data[2]" target="_blank" title='Linkedin'>
+                    <a class= "iconlink" :href="member.data[2]" title='Linkedin'>
                         <img class="icon" src="./other/LinkedIn 2.svg">
                     </a>           
                 </div>
@@ -84,9 +85,10 @@ Vue.createApp({
             members: [
                 {name: 'Baldwin-Williams, Ryon', data: ['Artifacts Manager', 'baldw266', 'https://www.linkedin.com/in/baldwin-williams/','./HomePage/images/ryon_image.JPG'] },
                 { name: 'Vandyke, Sawyer', data: ['Project Manager', 'vandy118', 'https://www.linkedin.com/in/sawyer-vandyke-7326532b4/','./HomePage/images/Sawyer_image.png'] },
+                { name: 'Bossio, Grant', data: ['Project Facilitator', 'bossiogr', 'https://www.linkedin.com/in/grant-bossio-705598324/','./HomePage/images/grant-image.png'] },
+                { name: 'Heavner, Collin', data: ['Project Facilitator 2', 'heavnerc', 'https://www.linkedin.com/in/collin-heavner','./HomePage/images/colin.jpg'] },
                 { name: 'Grycza, Ben', data: ['Domain Expert', 'gryczabe', 'https://www.linkedin.com/in/ben-grycza-00bb22297/','./HomePage/images/Grycza_Ben_image.png'] },
-                { name: 'Williams, Troy', data: ['Security insurance', 'will3645', 'https://www.linkedin.com/in/troy-williams-a90327318/','./HomePage/images/Troy_image.jpg'] },
-                { name: 'Bossio, Grant', data: ['Project Facilitator', 'bossiogr', 'https://www.linkedin.com/in/grant-bossio-705598324/','./HomePage/images/grant-image.png'] }
+                { name: 'Williams, Troy', data: ['Security insurance', 'will3645', 'https://www.linkedin.com/in/troy-williams-a90327318/','./HomePage/images/Troy_image.jpg'] }
             ]
         };
     }

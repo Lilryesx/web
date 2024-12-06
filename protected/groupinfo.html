@@ -18,7 +18,6 @@
 
         <!-- Import Scripting (defer makes the js load after html loads)-->
         <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js" ></script>
-        <script src="../protected/groupinfo.js" defer></script>
         <script src="../protected/mini-vue.js" defer></script>
 
 
@@ -36,14 +35,24 @@
         <div class="header-right">
             <a id="" href="../index.html"> Back to safety </a> 
         </div>
-    </div>
-
-    <h2>Meetings</h2>
-    <div id="meetings-collapse"> </div>
+    </div>   
 
     <h2>Requirements & Questions </h2>
     <div class="req"> 
         <a id="QnA" target="_blank"  href="../other/documents/SRS-1.pdf"> Requirements v1 </a> 
-        <a id="QnA" target="_blank"  href="../other/documents/Q&A-1.pdf"> Q&A </a> 
+        <a id="QnA" target="_blank"  href="../other/documents/SRS-2.pdf"> Requirements v2 </a> 
+        <a id="QnA" target="_blank"  href="../other/documents/Q&A-1.pdf"> Dialog with customers: Q&A </a> 
+        <div class="dialog-holder"><div id="dialog-collapse"> </div> </div>
     </div>
+
+    <h2>Meetings</h2>
+    <div class="meetings-holder"><div id="meetings-collapse"> </div> </div>
+
+    <h2>Discussion Threads</h2>
+    <div class="threads-holder"><div id="threads-collapse"> </div> </div>
+
+    <h2>Intermediate Assignments</h2>
+    
+    <div class="inter-holder"><div id="inter-holder"> </div> </div>
+
 </body>

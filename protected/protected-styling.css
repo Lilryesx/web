@@ -1,3 +1,13 @@
+.meetings-holder{
+    max-height: 25rem;
+    overflow: scroll;
+}
+
+.threads-holder{
+    max-height: 25rem;
+    overflow: scroll;
+}
+
 a{
     text-decoration: none;
 }
@@ -109,4 +119,17 @@ body{
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
+}
+
+
+
+.thread-image{
+    max-width: 100%;
+    height: auto;
+}
+
+#inter-holder{
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
 }
